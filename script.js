@@ -4,8 +4,11 @@
 
 console.log('ciao');
 // dichiarazione var e array
-var tuocognome, elenco, listacognomi, listatemp;
+var tuocognome, elenco, listacognomi, listatemp, posizione, tuapos;
 listacognomi = document.getElementById('mio-id');
+posizione = document.getElementById('tua-pos');
+
+
 elenco = [
   'Bianchi',
   'Rossi',
@@ -40,3 +43,11 @@ listacognomi.innerHTML = listatemp + "<li>" + elenco[i] + "</li>";
 
 
 // restituisci posizione in elenco
+var j=0;
+while (tuocognome === elenco[j]){
+  tuapos = j;
+
+  console.log(j);
+  j++
+}
+posizione.innerHTML = 'in elenco sei il num. : ' + tuapos;
