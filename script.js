@@ -4,7 +4,7 @@
 
 console.log('ciao');
 // dichiarazione var e array
-var tuocognome, elenco, listacognomi;
+var tuocognome, elenco, listacognomi, listatemp;
 listacognomi = document.getElementById('mio-id');
 elenco = [
   'Bianchi',
@@ -21,10 +21,13 @@ tuocognome = prompt('Inserisci il tuo cognome');
 
 // push nell'array
 
+elenco.push(tuocognome);
+console.log(elenco);
+
+//  ordina elenco alfabetico
+elenco.sort();
+console.log(elenco);
 
 
-// stampa la lista ordinata
-
-listacognomi.innerHTML = elenco.sort()
 
 // restituisci posizione in elenco
