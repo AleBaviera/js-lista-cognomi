@@ -28,6 +28,15 @@ console.log(elenco);
 elenco.sort();
 console.log(elenco);
 
+// crea lista
+
+for (var i = 0; i < elenco.length; i++) {
+  listatemp = listacognomi.innerHTML;
+  console.log(listatemp);
+
+
+listacognomi.innerHTML = listatemp + "<li>" + elenco[i] + "</li>";
+}
 
 
 // restituisci posizione in elenco
