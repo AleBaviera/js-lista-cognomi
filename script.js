@@ -44,8 +44,11 @@ listacognomi.innerHTML = listatemp + "<li>" + elenco[i] + "</li>";
 
 // restituisci posizione in elenco
 var j=0;
-while (tuocognome === elenco[j]){
-  tuapos = j;
+while (j < elenco.length){
+  if (tuocognome === elenco[j]){
+    tuapos = j+1;
+  }
+
 
   console.log(j);
   j++
